@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Set character set and viewport for better rendering on different devices -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Set the title of the document -->
+    <title>Day 11 - Team Showcase Section (Interactivity Added)</title>
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Link to the Remix Icon library for icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Link to Google Fonts to use the Nunito font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Team section -->
+    <section class="team">
+        <div class="center">
+            <!-- Heading for the team section -->
+            <h1>Our Team</h1>
+        </div>
+
+        <!-- Team content with individual team member boxes -->
+        <div class="team-content">
+            <!-- Team member box for Project Manager role -->
+            <div class="box" data-bio="Dave Musk is a seasoned project manager with a track record of successfully leading and delivering complex projects. He excels in strategic planning and team coordination.">
+                <img src="team-img/1.png">
+                <h3>Dave Musk</h3>
+                <h5>Project Manager</h5>
+                <div class="icons">
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                    <a href="#"><i class="ri-facebook-box-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-fill"></i></a>
+                </div>
+            </div>
+
+            <!-- Team member box for Team Lead role -->
+            <div class="box" data-bio="Alima Jobs is an experienced team lead with a focus on motivating and guiding team members. She has a proven record of driving successful team outcomes and fostering collaboration.">
+                <img src="team-img/2.png">
+                <h3>Alima Jobs</h3>
+                <h5>Team Lead</h5>
+                <div class="icons">
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                    <a href="#"><i class="ri-facebook-box-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-fill"></i></a>
+                </div>
+            </div>
+
+            <!-- Team member box for Software Developer role -->
+            <div class="box" data-bio="Jacob Philip is a skilled software developer with expertise in coding and problem-solving. He is passionate about creating efficient and robust software solutions.">
+                <img src="team-img/3.png">
+                <h3>Jacob Philip</h3>
+                <h5>Software Developer</h5>
+                <div class="icons">
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                    <a href="#"><i class="ri-facebook-box-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-fill"></i></a>
+                </div>
+            </div>
+
+            <!-- Team member box for UI/UX Designer role -->
+            <div class="box" data-bio="Halima Fariida is a creative UI/UX designer with a keen eye for aesthetics and user experience. She specializes in creating visually appealing and user-friendly designs.">
+                <img src="team-img/4.png">
+                <h3>Halima Fariida</h3>
+                <h5>UI/UX Designer</h5>
+                <div class="icons">
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                    <a href="#"><i class="ri-facebook-box-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-fill"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for detailed information -->
+    <div id="memberModal" class="modal">
+        <div class="modal-content" id="modalContent">
+            <!-- Member details will be dynamically added here -->
+        </div>
+        <span class="close" onclick="closeModal()">&times;</span>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script defer src="script.js"></script>
+
+</body>
+
+</html>

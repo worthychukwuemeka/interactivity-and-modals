@@ -1,0 +1,141 @@
+/* Apply styles to all elements, ensuring a consistent base */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+}
+
+/* Styles for the team section */
+.team {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(#191421, #381666);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Styles for the content within the team section */
+.team-content {
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+/* Styles for team member images */
+.team-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+/* Styles for centered heading within the team section */
+.center h1 {
+    color: #fff;
+    font-size: 4rem;
+    text-align: center;
+}
+
+/* Styles for individual team member boxes */
+.box {
+    padding: 16px;
+    background: #1b1229;
+    border-radius: 15px;
+    transition: all .38s ease;
+}
+
+/* Styles for team member names */
+.box h3 {
+    font-size: 23px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+/* Styles for team member roles */
+.box h5 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #b7b4bb;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+/* Styles for social icons */
+.icons i {
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 8px;
+    transition: all .38s ease;
+}
+
+/* Hover effect for social icons */
+.icons i:hover {
+    transform: scale(1.2);
+}
+
+/* Hover effect for team member boxes */
+.box:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+/* Styles for the modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay background */
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/* Responsive styles for smaller screens */
+@media (max-width: 1240px) {
+    .team {
+        width: 100%;
+        height: auto;
+        padding: 90px 2%;
+    }
+
+    .center h1 {
+        font-size: 3.2rem;
+    }
+}
+
+
